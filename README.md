@@ -9,14 +9,14 @@ In our web-service we have three layers.
 
 APIs used are:
 1. assign_roles:
-	endpoint: /users/{user_id}/role/{role_id}
-	type: POST
+endpoint: /users/{user_id}/role/{role_id}
+type: POST
 2. remove_roles:
-	endpoint: /users/{user_id}/role/{role_id}
-	type: DELETE
+endpoint: /users/{user_id}/role/{role_id}
+type: DELETE
 3. check_authorization:
-	endpoint: /users/{user_id}/resource/{resource_id}/access_type/{access_id}
-	type: GET
+endpoint: /users/{user_id}/resource/{resource_id}/access_type/{access_id}
+type: GET
 
 Assumptions:
 1. We have following services.
