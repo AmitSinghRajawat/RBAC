@@ -1,7 +1,7 @@
 # RBAC
 Role based access control
 
-Description:
+### Description:
 In our web-service we have three layers.
 
 1. Application Layer
@@ -10,21 +10,21 @@ In our web-service we have three layers.
 
 3. Models
 
-APIs used are:
+### APIs used are:
 
 1. assign_roles:
-endpoint: /users/{user_id}/role/{role_id}
-type: POST
+#### endpoint: /users/{user_id}/role/{role_id}
+#### type: POST
 
 2. remove_roles:
-endpoint: /users/{user_id}/role/{role_id}
-type: DELETE
+#### endpoint: /users/{user_id}/role/{role_id}
+#### type: DELETE
 
 3. check_authorization:
-endpoint: /users/{user_id}/resource/{resource_id}/access_type/{access_id}
-type: GET
+#### endpoint: /users/{user_id}/resource/{resource_id}/access_type/{access_id}
+#### type: GET
 
-Assumptions:
+### Assumptions:
 
 1. We have following services.
 	Gunicorn container to host web-service in django
@@ -38,7 +38,7 @@ Assumptions:
 5. Permission '110' corresponds to RWD (Read, Write, Delete).
 	i.e. Read yes, Write yes, Delete no
 
-Workflow:
+### Workflow:
 
 1. Client interacts with the application layer via RESTful service.
 
@@ -46,7 +46,7 @@ Workflow:
 
 3. API interacts with database layer and model layer.
 
-How to launch the application:
+### How to launch the application:
 
 1. Install python IDE atleast 2.7
 
